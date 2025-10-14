@@ -1,5 +1,3 @@
-# Technical-Questions
-
 ## Name: Saad Shaikh
 
 ## Branch: IMCA-A
