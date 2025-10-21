@@ -4,13 +4,17 @@
 #include <cstdlib>
 using namespace std;
 
+void areaOfTriangle(int len, int bre)
+{
+   int area = (len * bre) / 2;
+   std::cout << "Area of a triangle is: " << area << std::endl;
+}
 int main()
 {
    system("CLS");
 
    int length = 10, breadth = 15;
-   int area = (length * breadth) / 2;
+   areaOfTriangle(length, breadth);
 
-   std::cout << "Area of a triangle is: " << area << std::endl;
    return 0;
 }

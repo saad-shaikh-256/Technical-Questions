@@ -3,12 +3,16 @@
 #include <cstdlib>
 using namespace std;
 
+void personalInfo()
+{
+   cout << "Name: \t\tSaad Shaikh" << endl;
+   cout << "Address: \tAhmedabad, INDIA" << endl;
+   cout << "Birth Date: \tMarch 2003" << endl;
+}
+
 int main()
 {
    system("CLS");
-
-   std::cout << "Name: \t\tSaad Shaikh" << std::endl;
-   std::cout << "Address: \tAhmedabad, INDIA" << std::endl;
-   std::cout << "Birth Date: \tMarch 2003" << std::endl;
+   personalInfo();
    return 0;
 }

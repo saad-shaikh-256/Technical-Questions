@@ -3,42 +3,47 @@
 #include <cstdlib>
 using namespace std;
 
+void intergerOperation(int a, int b)
+{
+   std::cout << "===== \t Integer Operations \t ====="
+             << std::endl;
+
+   // Addition
+   std::cout << "\n"
+             << a << " + " << b << " = " << a + b << "\t (Addition)" << std::endl;
+
+   // Division
+   std::cout << a << " / " << b << " = " << a / b << "\t (Division)" << std::endl;
+
+   // Multiplication
+   std::cout << a << " * " << b << " = " << a * b << "\t (Multiplication)" << std::endl;
+}
+
+void floatOperation(int a, int b)
+{
+   std::cout << "\n===== \t Float Operations \t ====="
+             << std::endl;
+
+   // Addition
+   std::cout << "\n"
+             << a << " + " << b << " = " << a + b << "\t (Addition)" << std::endl;
+
+   // Division
+   std::cout << a << " / " << b << " = " << a / b << "\t (Division)" << std::endl;
+
+   // Multiplication
+   std::cout << a << " * " << b << " = " << a * b << "\t (Multiplication)" << std::endl;
+}
+
 int main()
 {
    system("CLS");
 
-   int num1 = 55, num2 = 5;
-   // Integer operations
-   std::cout << "===== \t Integer Operations \t ===== \n"
-             << std::endl;
-   std::cout << "Num-1 is: 55" << std::endl;
-   std::cout << "Num-2 is: 5" << std::endl;
+   int int1 = 55, int2 = 5;
+   intergerOperation(int1, int2);
 
-   // Addition
-   std::cout << "\nAddition of " << num1 << " + " << num2 << " = " << num1 + num2 << std::endl;
-
-   // Division
-   std::cout << "Division of " << num1 << " / " << num2 << " = " << num1 / num2 << std::endl;
-
-   // Multiplication
-   std::cout << "Multiplication of " << num1 << " * " << num2 << " = " << num1 * num2 << std::endl;
-
-   float f1 = 10.5, f2 = 2.5;
-
-   std::cout << "Num-1 is: 10.5" << std::endl;
-   std::cout << "Num-2 is: 2.5" << std::endl;
-   // Float operations
-   std::cout << "\n===== \t Float Operations \t ===== \n"
-             << std::endl;
-
-   // Addition
-   cout << "Addition of " << f1 << " + " << f2 << " = " << f1 + f2 << endl;
-
-   // Division
-   cout << "Division of " << f1 << " / " << f2 << " = " << f1 / f2 << endl;
-
-   // Multiplication
-   cout << "Multiplication of " << f1 << " * " << f2 << " = " << f1 * f2 << endl;
+   float flo1 = 10.5, flo2 = 2.5;
+   floatOperation(flo1, flo2);
 
    return 0;
 }

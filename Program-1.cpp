@@ -4,9 +4,14 @@
 #include <cstdlib>
 using namespace std;
 
+void helloWorld()
+{
+   std::cout << "Hello World" << std::endl;
+}
+
 int main()
 {
    system("CLS");
-   std::cout << "Hello World" << std::endl;
+   helloWorld();
    return 0;
 }

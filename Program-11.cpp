@@ -4,10 +4,8 @@
 #include <cstdlib>
 using namespace std;
 
-int main()
+void simpleInterest()
 {
-   system("CLS");
-
    std::cout << "=== Simple Interest ===" << std::endl;
 
    float primaryAmount;
@@ -25,5 +23,13 @@ int main()
    float simpleInterest = (primaryAmount * rateOfInterest * timePeriod) / 100;
 
    std::cout << "Simple Interest is: " << simpleInterest << std::endl;
+}
+
+int main()
+{
+   system("CLS");
+
+   simpleInterest();
+
    return 0;
 }

@@ -4,13 +4,18 @@
 #include <cstdlib>
 using namespace std;
 
+void areaOfRectangle(int len, int bre)
+{
+   int area = len * bre;
+   std::cout << "Area of Rectangle is: " << area << std::endl;
+}
+
 int main()
 {
    system("CLS");
    int length = 25;
    int breadth = 15;
-   int area = length * breadth;
 
-   std::cout << "Area of a rectangle is: " << area << std::endl;
+   areaOfRectangle(length, breadth);
    return 0;
 }

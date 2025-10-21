@@ -4,16 +4,21 @@
 #include <cstdlib>
 using namespace std;
 
+void conversionToFahrenheit(float Celsius)
+{
+   float ConversionToFahrenheit = (9.0 * Celsius) / 5.0 + 32;
+   std::cout << "Conversion of Celsius to Fahrenite is: " << ConversionToFahrenheit << std::endl;
+}
+
 int main()
 {
    system("CLS");
 
    float Celsius;
-   std::cout << "Enter Temperature (Celsius): ";
+   std::cout << "Enter Temperature(Celsius): ";
    cin >> Celsius;
 
-   float ConversionToFahrenheit = (Celsius * 9 / 5) + 32;
+   conversionToFahrenheit(Celsius);
 
-   std::cout << "Conversion of Celsius to Fahrenite is: " << ConversionToFahrenheit << std::endl;
    return 0;
 }
